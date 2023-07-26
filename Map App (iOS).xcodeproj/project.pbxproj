@@ -7,18 +7,26 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4B7177F82A7143320010A717 /* LocationsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B7177F72A7143320010A717 /* LocationsView.swift */; };
+		4B7177FA2A7149F20010A717 /* LocationsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B7177F92A7149F20010A717 /* LocationsViewModel.swift */; };
 		4BD72C5C29AE164600F2AB34 /* Map_App__iOS_App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BD72C5B29AE164600F2AB34 /* Map_App__iOS_App.swift */; };
 		4BD72C5E29AE164600F2AB34 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BD72C5D29AE164600F2AB34 /* ContentView.swift */; };
-		4BD72C6029AE164800F2AB34 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4BD72C5F29AE164800F2AB34 /* Assets.xcassets */; };
 		4BD72C6329AE164800F2AB34 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4BD72C6229AE164800F2AB34 /* Preview Assets.xcassets */; };
+		4BD72C6A29AE174E00F2AB34 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4BD72C6929AE174E00F2AB34 /* Assets.xcassets */; };
+		4BD72C7029AE196A00F2AB34 /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BD72C6F29AE196A00F2AB34 /* Location.swift */; };
+		4BD72C7329AE1A9200F2AB34 /* LocationsDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BD72C7229AE1A9200F2AB34 /* LocationsDataService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4B7177F72A7143320010A717 /* LocationsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationsView.swift; sourceTree = "<group>"; };
+		4B7177F92A7149F20010A717 /* LocationsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationsViewModel.swift; sourceTree = "<group>"; };
 		4BD72C5829AE164600F2AB34 /* Map App (iOS).app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Map App (iOS).app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4BD72C5B29AE164600F2AB34 /* Map_App__iOS_App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Map_App__iOS_App.swift; sourceTree = "<group>"; };
 		4BD72C5D29AE164600F2AB34 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		4BD72C5F29AE164800F2AB34 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4BD72C6229AE164800F2AB34 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		4BD72C6929AE174E00F2AB34 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4BD72C6F29AE196A00F2AB34 /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
+		4BD72C7229AE1A9200F2AB34 /* LocationsDataService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationsDataService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,9 +59,13 @@
 		4BD72C5A29AE164600F2AB34 /* Map App (iOS) */ = {
 			isa = PBXGroup;
 			children = (
+				4BD72C7129AE1A4F00F2AB34 /* DataServices */,
 				4BD72C5B29AE164600F2AB34 /* Map_App__iOS_App.swift */,
 				4BD72C5D29AE164600F2AB34 /* ContentView.swift */,
-				4BD72C5F29AE164800F2AB34 /* Assets.xcassets */,
+				4BD72C6B29AE18CD00F2AB34 /* Models */,
+				4BD72C6E29AE18F800F2AB34 /* ViewModels */,
+				4BD72C6D29AE18EF00F2AB34 /* Views */,
+				4BD72C6929AE174E00F2AB34 /* Assets.xcassets */,
 				4BD72C6129AE164800F2AB34 /* Preview Content */,
 			);
 			path = "Map App (iOS)";
@@ -65,6 +77,38 @@
 				4BD72C6229AE164800F2AB34 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		4BD72C6B29AE18CD00F2AB34 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				4BD72C6F29AE196A00F2AB34 /* Location.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		4BD72C6D29AE18EF00F2AB34 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				4B7177F72A7143320010A717 /* LocationsView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		4BD72C6E29AE18F800F2AB34 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				4B7177F92A7149F20010A717 /* LocationsViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		4BD72C7129AE1A4F00F2AB34 /* DataServices */ = {
+			isa = PBXGroup;
+			children = (
+				4BD72C7229AE1A9200F2AB34 /* LocationsDataService.swift */,
+			);
+			path = DataServices;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,8 +169,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4BD72C6A29AE174E00F2AB34 /* Assets.xcassets in Resources */,
 				4BD72C6329AE164800F2AB34 /* Preview Assets.xcassets in Resources */,
-				4BD72C6029AE164800F2AB34 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,7 +181,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4BD72C7329AE1A9200F2AB34 /* LocationsDataService.swift in Sources */,
+				4B7177FA2A7149F20010A717 /* LocationsViewModel.swift in Sources */,
 				4BD72C5E29AE164600F2AB34 /* ContentView.swift in Sources */,
+				4B7177F82A7143320010A717 /* LocationsView.swift in Sources */,
+				4BD72C7029AE196A00F2AB34 /* Location.swift in Sources */,
 				4BD72C5C29AE164600F2AB34 /* Map_App__iOS_App.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
